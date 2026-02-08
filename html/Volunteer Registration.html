@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Volunteer Registration</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../css/style4.css">
+    <script src="../JavaScript/script.js"></script>
+</head>
+<body>
+    <header class="header">
+        <h1>FUTURE CHAMPIONS</h1>
+        <h1>Join Us in Empowering Communities Through Sports!</h1>
+    </header>
+    <div class="container">
+        <form id="volunteer-form">
+            <h2 class="form-title">Register to Volunteer</h2>
+            <div class="user-details">
+                <div class="input-box">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="e.g., John Doe" required>
+                </div>
+                <div class="input-box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter Your Email" required>
+                </div>
+                <div class="input-box">
+                    <label for="phone">Phone Number</label>
+                    <input type="tel" id="phone" placeholder="e.g., +1234567890" required>
+                </div>
+                <div class="input-box">
+                    <label for="password">Password</label>
+                    <input type="password" id="password" placeholder="Create a password" required>
+                </div>
+                <div class="input-box">
+                    <label for="confirm-password">Confirm Password</label>
+                    <input type="password" id="confirm-password" placeholder="Confirm your password" required>
+                </div>
+                <div class="input-box">
+                    <label for="availability">Availability</label>
+                    <input type="text" id="availability" placeholder="e.g., Weekends, Evenings" required>
+                </div>
+                <div class="input-box">
+                    <label for="interest">Areas of Interest</label>
+                    <select id="interest" required>
+                        <option value="">Select an option</option>
+                        <option value="youth-coaching">Youth Coaching</option>
+                        <option value="equipment-distribution">Equipment Distribution</option>
+                        <option value="social-media">Social Media Promotion</option>
+                        <option value="refereeing">Refereeing</option>
+                        <option value="first-aid">First Aid and Safety</option>
+                    </select>
+                </div>
+                <div class="input-box">
+                    <label for="motivation">Why Volunteer?</label>
+                    <textarea id="motivation" placeholder="Share your motivation..." required></textarea>
+                </div>
+            </div>
+
+            <div class="gender-details">
+                <h3>Gender</h3>
+                <div class="category">
+                    <label>
+                        <input type="radio" name="gender" value="male" required>
+                        Male
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="female">
+                        Female
+                    </label>
+                    <label>
+                        <input type="radio" name="gender" value="other">
+                        Prefer not to say
+                    </label>
+                </div>
+            </div>
+
+            <div class="terms">
+                <input type="checkbox" id="terms" required>
+                <label for="terms">I agree to the <a href="../Terms of Service.pdf" target="_blank" rel="noopener noreferrer">terms and conditions</a>.
+            </div>
+            
+
+            <div class="button">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        <a href="Index.html" class="back-button">Back to Home</a>
+    </div>
+    <!-- Popup Modal -->
+    <div id="confirmationModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <p>Registration successful! Thank you for volunteering.</p>
+        </div>
+    </div>
+</body>
+</html>

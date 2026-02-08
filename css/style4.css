@@ -1,0 +1,231 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    background-color: #f7f7f7;
+    display: flex;
+    flex-direction: column; /* Stack elements vertically */
+    align-items: center; /* Center elements horizontally */
+    min-height: 100vh; /* Ensure full height */
+	background-image:url('../images/bg values.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px; /* Space between header and container */
+    padding: 20px 0; /* Padding for visual spacing */
+}
+
+.header .logo {
+    width: 100px; /* Adjust logo size */
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin: 15px 0;
+    color: white; /* Brand color */
+}
+
+.container {
+    max-width: 700px;
+    width: 100%;
+    background: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-align: center; /* Center the title */
+    color: #27223f; /* Title color */
+}
+
+.user-details {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-box {
+    margin-bottom: 25px;
+}
+
+.input-box label {
+    display: block;
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.input-box input,
+.input-box textarea,
+.input-box select {
+    height: 50px;
+    width: 100%;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    transition: all 0.3s ease;
+}
+
+.input-box textarea {
+    height: 100px; /* Height for motivation textarea */
+}
+
+.input-box input:focus,
+.input-box textarea:focus,
+.input-box select:focus {
+    border-color: #ff2953; /* Focus color */
+}
+
+.gender-details {
+    margin-top: 20px;
+    text-align: center; /* Center gender section */
+}
+
+.gender-details h3 {
+    margin-bottom: 10px; /* Space below gender heading */
+}
+
+.category {
+    display: flex;
+    justify-content: space-around; /* Even spacing for radio buttons */
+    margin-bottom: 20px;
+}
+
+.category label {
+    cursor: pointer; /* Pointer cursor for labels */
+}
+
+.terms {
+    margin: 20px 0;
+    text-align: center; /* Center terms text */
+}
+
+.terms label {
+    font-size: 14px; /* Font size for terms */
+}
+
+.button {
+    display: flex;
+    justify-content: center; /* Center the button */
+}
+
+.button input {
+    height: 50px;
+    width: 100%; /* Full width button */
+    outline: none;
+    color: #fff;
+    border: none;
+    font-size: 18px;
+    font-weight: 500;
+    border-radius: 5px;
+    background-color: #ff2953; /* Button color */
+    transition: background-color 0.3s ease;
+    
+}
+
+.button input:hover {
+    background-color: #d71f4a; /* Darker color on hover */
+    cursor: pointer;
+}
+
+.back-button {
+    display: block;
+    text-align: center; /* Center the back button */
+    margin-top: 20px; /* Margin above back button */
+    color: #27223f;; /* Back button color */
+}
+
+.back-button:hover {
+    text-decoration: underline; /* Underline on hover */
+}
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Black background with opacity */
+    padding-top: 100px;
+  }
+  
+  .modal-content {
+    background-color: #ffffff;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .modal-content p {
+    font-size: 18px;
+    color: #000;
+  }
+  
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }
+/* For smaller screens, adjust layout and font sizes */
+@media (max-width: 768px) {
+    .header h1 {
+        font-size: 1.8rem; /* Reduce header size */
+    }
+
+    .input-box label {
+        font-size: 0.9rem; /* Smaller labels */
+    }
+
+    .category {
+        flex-direction: column; /* Stack radio buttons vertically */
+        align-items: flex-start;
+    }
+}
+
+/* For extra small screens (mobile) */
+@media (max-width: 480px) {
+    .container {
+        padding: 10px; /* Less padding */
+    }
+
+    .header h1 {
+        font-size: 1.5rem; /* Further reduce header size */
+    }
+
+    .button input {
+        height: 45px; /* Slightly smaller button */
+        font-size: 1rem; /* Adjust font size */
+    }
+}
+
+
+@media (max-width: 584px) {
+    .container {
+        max-width: 100%; /* Responsive full width */
+        padding: 20px; /* Adjust padding */
+    }
+}

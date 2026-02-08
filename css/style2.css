@@ -1,0 +1,816 @@
+body {
+  font-family: 'Poppins', sans-serif;
+  color: #000000;
+  background-color: hsl(250, 30%, 95%);
+}
+
+
+.header_section .container-fluid {
+  padding-right: 25px;
+  padding-left: 25px;
+}
+
+.header_section .nav_container {
+  margin: 0 auto;
+}
+
+
+.hero_area {
+ /* height: 50vh;*/
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-image: url(../images/Test.jpg);
+  background-size: cover;
+  background-attachment: fixed;
+  padding-bottom: 50px;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link {
+  margin: 10px 30px;
+  padding: 0;
+  padding-bottom: 3px;
+  color: #ffffff;
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  font-size: 15px;
+}
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active a::after, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover a::after {
+  display: block;
+  background-color: #ff2953;
+}
+
+
+.detail-box text-center, h1{
+text-transform: uppercase;
+  font-weight: bold;
+}
+.detail-box {
+  width: 100%;
+}
+.detail-box {
+  margin: 72px 0;
+}
+
+.detail-box {
+  text-align: center;
+}
+
+.detail-box h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+  letter-spacing: .5rem;
+}
+.detail-box {
+  display: inline-block;
+  padding: 8px 35px;
+  background-color: transparent;
+  color: #ffffff;
+  border-radius: 0px;
+  -webkit-transition: -webkit-transform 0.3s;
+  transition: -webkit-transform 0.3s;
+  transition: transform 0.3s;
+  transition: transform 0.3s, -webkit-transform 0.3s;
+  text-transform: uppercase;
+  margin-top: 35
+}
+
+.navbar-brand {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+}
+.navbar-brand span {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #ffffff;
+  position: relative;
+  z-index: 3;
+}
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item .nav-link::after {
+  display: none;
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  background-color: #ffffff;
+}
+
+.custom_nav-container.navbar-expand-lg .navbar-nav .nav-item.active a::after, .custom_nav-container.navbar-expand-lg .navbar-nav .nav-item:hover a::after {
+  display: block;
+  background-color: #ff2953;
+}
+
+a,
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: initial;
+}
+
+.btn,
+.btn:focus {
+  outline: none !important;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+
+.custom_nav-container {
+  z-index: 99999;
+  padding: 15px 0;
+}
+.custom_nav-container .navbar-toggler {
+  outline: none;
+}
+
+.custom_nav-container .navbar-toggler .navbar-toggler-icon {
+  background-image: url('../images/menu.png');
+  background-size: 55px;
+}
+
+
+/*-- -------------------------- -->
+<---       Side By Side         -->
+<--- -------------------------- -*/
+
+/* Mobile - 360px */
+@media only screen and (min-width: 0rem) {
+  #sbs-1591 {
+    padding: var(--sectionPadding);
+  }
+
+ 
+  #sbs-1591 .cs-container {
+    width: 100%;
+    /* changes to 1280px at desktop */
+	  padding-top:100px;
+    max-width: 34.375rem;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* 48px - 64px */
+    gap: clamp(3rem, 6vw, 4rem);
+  }
+  #sbs-1591 .cs-content {
+    /* set text align to left if content needs to be left aligned */
+    text-align: left;
+    width: 100%;
+    max-width: 36.625rem;
+    display: flex;
+    flex-direction: column;
+    /* centers content horizontally, set to flex-start to left align */
+    align-items: flex-start;
+  }
+
+  #sbs-1591 .cs-title {
+    
+    font-weight: bolder;
+    margin-bottom: 1.5rem;
+    text-transform: uppercase;
+    color: #211d35;
+    
+}
+  
+  #sbs-1591 .cs-text {
+    font-size:29px;
+    margin-bottom: 1rem;
+  }
+  #sbs-1591 .cs-text:last-of-type {
+    margin-bottom: 2rem;
+  }
+  
+  #sbs-1591 .cs-image-group {
+    /* scales the whole group based on the view width size and stop when that vales equals .745em, resets at desktop */
+    font-size: min(1.959vw, .745em);
+    width: 39.375em;
+    /* we set a minimum height so it never gets smaller than this value */
+    min-height: 39.25em;
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+  #sbs-1591 .cs-picture {
+    position: absolute;
+  }
+  #sbs-1591 .cs-picture img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+  #sbs-1591 .cs-picture1 {
+    /* the percentage heights allow them to be responsive to the height of the parent cs-image-group. On desktop, when the felxbox is set to aling-items: stretch, the cs-image group will stretch to fill the height of the parent container. So when you add more content to the cs-content group and make it taller, the cs-image group will get taller with it and every image will stretch with the parent, making this entire group responsive to the changing amounts of content next to it */
+    width: 25.8125em;
+    height: 79.617834%;
+    top: 0;
+    left: 0;
+    z-index: -1;
+  }
+  #sbs-1591 .cs-picture2 {
+    width: 25.8125em;
+    height: 44.585987%;
+    bottom: 0;
+    right: 0;
+    z-index: 10;
+  }
+}
+/* Tablet - 768px */
+@media only screen and (min-width: 48rem) {
+  #sbs-1591 .cs-container {
+    max-width: 80rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+  #sbs-1591 .cs-content {
+    /* this padding sets a minimum gap between the top and bottom of the content div and the top and bottom of the cs-image-group */
+    padding: 3.75rem 0;
+    /* while the cs-image-group will stretch to fill the height of the parent, this property will ensure that the cs-content group aligns itse;f in the center of the parent div instead of stretching */
+    align-self: center;
+  }
+  #sbs-1591 .cs-image-group {
+    font-size: min(1.2vw, 1em);
+    flex: none;
+  }
+}
+
+.more-about-us{
+  margin:100px;
+  
+}
+
+
+
+.layout-style {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color:rgb(236, 238, 255);
+  padding:100px;
+  border:10px solid white;
+}
+
+.text-section {
+  flex: 1;
+  padding: 20px;
+  color: black;
+}
+
+.text-section h2 {
+  font-weight: bolder;
+  font-size: 32px;
+  margin-bottom: 10px;
+  color: #211d35;
+}
+
+.text-section p {
+  font-size: 29px;
+  line-height: 1.6;
+}
+
+.image-section {
+  display: flex;
+  gap: 20px;
+}
+
+.image-section img {
+  width: 400px; /* Adjust the width of the images */
+  height: 400px;
+  border-radius: 10px; /* Optional rounded corners */
+}
+
+
+
+.call-to-action {
+      text-align: center;
+      font-size: 20px;
+      margin-bottom: 10px;
+      color: #555;
+    }
+
+    .content-buttons {
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    .section-btn {
+      font-size: 24px;
+      padding: 20px 40px;
+      margin: 10px;
+      cursor: pointer;
+      border: none;
+      transition: background-color 0.3s ease, transform 0.3s ease;
+      outline: none;
+      color: #ffffff;
+      background: #ff2953;
+      margin: 0 0 0 auto;
+      margin-right: 40px;
+      text-transform: uppercase;
+    }
+
+    .section-btn:hover {
+      background-color: #27223f;
+    }
+
+    .section-btn.active {
+      background-color: #27223f;
+      transform: scale(1.1);
+    }
+
+    .container {
+      margin-top: 50px;
+      opacity: 1;
+      transition: opacity 0.5s ease;
+    }
+
+    .container.fade {
+      opacity: 0;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin-bottom:20px;
+      justify-content: center;
+      align-items: center;
+    }
+    .p{
+      margin-bottom: 20px;
+      overflow-wrap: break-word;
+    }
+    .column-66 {
+      flex:2;
+      padding: 20px;
+      overflow:auto
+    }
+
+    .column-33 {
+      flex: 1;
+      padding: 20px;
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+   .xlarge-font {
+    text-align: center;
+    font-size: 64px;
+    margin-bottom: 40px;
+   }
+
+   /* General Styles for Project Intro */
+.project-intro {
+  background-color: hsl(250, 30%, 95%);
+  padding: 100px 20px; /* General padding for desktop */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 40px;
+}
+
+/* Flexbox container for content */
+.content-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+  max-width: 1200px; /* Constrain the width */
+  width: 100%;
+}
+
+/* Content Left */
+.content-left {
+  width: 50%; /* 50% width on desktop */
+  padding-right: 20px;
+}
+
+.content-left h1 {
+  font-size: 48px;
+  color: #211d35;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+}
+
+.content-left h2 {
+  font-size: 22px;
+  color: #211d35;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content-left p {
+  font-size: 18px;
+  color: #333;
+  line-height: 1.8;
+  margin-bottom: 20px;
+}
+
+/* Content Right */
+.content-right {
+  width: 50%; /* 50% width on desktop */
+}
+
+.content-right-img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .project-intro {
+    margin-top: 30px; /* Adjust the margin for mobile */
+    padding: 50px 15px; /* Adjust padding */
+  }
+
+  .content-container {
+    flex-direction: column; /* Stack content vertically on mobile */
+    text-align: center;
+  }
+
+  .content-left, .content-right {
+    width: 100%; /* Full width on mobile */
+    padding: 0; /* Remove padding */
+  }
+
+  .content-left h1 {
+    font-size: 32px; /* Adjust heading size for mobile */
+  }
+
+  .content-left h2 {
+    font-size: 18px; /* Adjust subheading size for mobile */
+  }
+
+  .content-left p {
+    font-size: 16px; /* Adjust paragraph text size */
+  }
+
+  .content-right-img {
+    max-width: 90%; /* Reduce image size slightly on mobile */
+    margin: 20px auto; /* Add spacing around the image */
+  }
+}
+
+
+.more {
+  text-align: center; /* Center text */
+  max-width: 3000px;
+  margin: auto;
+  background-color:hsl(250, 30%, 95%);
+  padding: 20px; /* Optional padding for spacing */
+}
+
+.more-text {
+  max-width: 50%; /* Control the width of the text */
+  margin: 0 auto; /* Center the text container */
+}
+
+.more-text h1 {
+  font-size: 48px;
+  font-weight: bold;
+  color: #27223f; 
+  line-height: 1.2;
+}
+
+.more-text h1 span {
+  display: block;
+}
+
+.more-text .p {
+  font-size: 18px;
+  color: #666;
+  margin: 20px 0;
+  line-height: 1.6;
+  
+}
+
+
+
+
+
+.more-image {
+  max-width: 45%;
+ /* margin-top: 20px;  Add space between text and image */
+  margin:0 auto;
+}
+
+.more-image img {
+display: inline-block;
+margin: 0%;
+width: 100%;
+border-radius: 10px;
+
+/* max-width: 100%;  Make the image responsive */
+height: auto; /* Maintain aspect ratio */
+}
+
+.projects{
+  float: left;
+  width: 100%;
+  margin:0 0 0 0;
+  padding: 100px 0;
+  background: hsl(250, 30%, 95%);
+}
+.project-item{
+  float: left;
+  width: 100%;
+  margin-bottom: 100px;
+}
+.project-item:last-of-type{
+  margin-bottom: 0;
+}
+.project-item .text{
+  width: 45%;
+  font-family: var(--default);
+  color: #000;
+}
+.project-item .text h3{
+  font-size: 48px;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+  font-weight: bold;
+  color: #211d35;
+}
+.project-item .text p{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+.project-item .visual{
+  width: 45%;
+}
+.project-item .visual img{
+  float: left;
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+  object-position: center;
+  aspect-ratio: 16/9;
+}
+.flex-sb {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.flex-sb-rv {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  flex-direction: row-reverse;
+}
+
+
+
+
+
+/* For smaller screens, adjust font size of hero_area elements */
+@media (max-width: 768px) {
+  .hero_area h1 {
+      font-size: 24px !important; /* Reduce font size of heading */
+  }
+
+  .hero_area p {
+      font-size: 16px !important; /* Reduce font size of paragraph text */
+  }
+}
+/* For smaller screens, adjust font size and padding */
+@media (max-width: 768px) {
+  #sbs-1591 {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  #sbs-1591 h2 {
+      font-size: 24px;
+  }
+
+  #sbs-1591 p {
+      font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .flex-sb, .flex-sb-rv {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .project-item .text, .project-item .visual {
+    width: 100%; /* Take full width for better readability */
+  }
+}
+
+/* Project Intro - Further Adjustments for Mobile */
+@media (max-width: 768px) {
+  .project-intro {
+    flex-direction: column;
+    padding: 10px 20px; /* Further reduce padding */
+   
+  }
+
+  .content-left, .content-right {
+    width: 100%;
+    margin: 0; /* Remove margins */
+    padding: 0; /* Reduce padding */
+  }
+
+  .content-right-img {
+    max-width: 80%; /* Make the image smaller */
+    height: auto;
+    border-radius: 10px;
+    margin: 10px auto; /* Center the image and reduce margin */
+  }
+
+  .project-intro h1 {
+    font-size: 24px; /* Further reduce heading size */
+    text-align: center; /* Center the heading */
+    margin-bottom: 10px; /* Reduce margin below heading */
+  }
+
+  .project-intro h2 {
+    font-size: 18px; /* Further reduce subheading size */
+    text-align: center;
+  }
+
+  .project-intro p {
+    font-size: 14px; /* Smaller text for mobile */
+    line-height: 20px;
+    text-align: center; /* Center text */
+    margin-bottom: 10px; /* Reduce space between paragraphs */
+  }
+
+  /* Hero Area Adjustments */
+  .hero_area {
+    height: auto;
+    
+  }
+
+  .hero_area h1 {
+    font-size: 26px; /* Keep hero area text smaller */
+  }
+
+  .hero_area p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 600px) {
+  .image-section img {
+    width: 90%;  /* Scale image to fit screen */
+    margin: 10px auto;  /* Center image */
+    height: auto;
+  }
+
+  .more-about-us {
+    padding: 20px;  /* Reduce padding for mobile */
+  }
+  
+  .layout-style {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .text-section, .image-section {
+    width: 100%;  /* Stack content */
+    margin-bottom: 20px;
+  }
+}
+
+/* Adjust cs-text for better readability */
+@media (max-width: 600px) {
+  .cs-text {
+    font-size: 18px;  /* Smaller, more readable text */
+    line-height: 1.5; /* Improve readability */
+    margin-bottom: 10px;  /* Reduce spacing */
+    text-align: center;  /* Align text to center */
+    padding: 10px;  /* Add some breathing space */
+  }
+
+  .cs-title {
+    font-size: 24px;  /* Smaller title for mobile */
+    margin-bottom: 10px;
+  }
+
+  .cs-container {
+    padding: 15px;  /* Reduce padding */
+    width: 100%;  /* Use full width on small screens */
+  }
+
+  .cs-image-group {
+    font-size: 1em;  /* Prevent scaling issues */
+    margin-bottom: 20px;
+  }
+
+  .cs-picture {
+    width: 100%;  /* Ensure image takes full width */
+    margin-bottom: 15px;
+  }
+
+  .cs-picture img {
+    object-fit: contain;  /* Ensure the image scales without cropping */
+  }
+}
+
+/* Optimize more-about-us layout for mobile */
+@media (max-width: 600px) {
+  .more-about-us {
+    flex-direction: column;  /* Stack content vertically */
+    padding: 20px;  /* Reduce padding */
+    text-align: center;  /* Center-align text */
+  }
+
+  .text-section, .image-section {
+    width: 100%;  /* Full width for each section */
+    margin-bottom: 20px;  /* Add space between elements */
+  }
+
+  .text-section p {
+    font-size: 18px;  /* Adjust text size */
+    line-height: 1.5;  /* Improve readability */
+  }
+
+  .image-section img {
+    width: 90%;  /* Make image responsive */
+    height: auto;  /* Maintain aspect ratio */
+    margin: 0 auto;  /* Center the image */
+  }
+}
+
+/* Content buttons optimization for mobile */
+@media (max-width: 600px) {
+  .content-buttons {
+    display: flex;
+    flex-direction: column;  /* Stack buttons vertically */
+    align-items: center;  /* Center buttons */
+    gap: 10px;  /* Add space between buttons */
+    margin: 20px 0;  /* Add margin for breathing space */
+  }
+
+  .section-btn {
+    width: 90%;  /* Make buttons span most of the screen */
+    font-size: 18px;  /* Adjust font size for smaller screens */
+    padding: 15px;  /* Ensure comfortable padding */
+  }
+}
+
+/* Content area optimization for mobile */
+@media (max-width: 600px) {
+  .container {
+    padding: 10px;  /* Reduce padding */
+  }
+
+  .row {
+    flex-direction: column;  /* Stack content vertically */
+    align-items: center;  /* Center-align content */
+    margin-bottom: 15px;  /* Add space between sections */
+  }
+
+  .column-66, .column-33 {
+    width: 100%;  /* Full width on mobile */
+    padding: 10px;  /* Reduce padding for better fit */
+  }
+
+  .xlarge-font {
+    font-size: 28px;  /* Adjust heading size */
+    margin-bottom: 20px;
+  }
+
+  .container img {
+    max-width: 90%;  /* Scale images to fit the screen */
+    margin: 0 auto;  /* Center images */
+    height: auto;  /* Maintain aspect ratio */
+  }
+}

@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>About Us</title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Roughly 155 characters">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+	<!--Bootstrap-->
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+
+  <!-- Fonts Style -->
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+
+  <!-- Owl Carousel CSS -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" type="text/css" href="../css/style2.css">
+	
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+  <script src="../JavaScript/script.js"></script>
+  </head>
+  <body>
+    <!-- Header Section -->
+    <div class="hero_area">
+      <header class="header_section">
+        <div class="container-fluid">
+          <nav class="navbar navbar-expand-lg custom_nav-container ">
+            <a class="navbar-brand" href="Index.html">
+              <span>
+			        Future Champions
+              </span>
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+
+		    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex ml-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav">
+                <li class="nav-item ">
+                  <a class="nav-link" href="Index.html">Home<span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item active">
+                  <a class="nav-link" href="About Us.html">About Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Projects.html">Projects Page</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="Volunteer Registration.html">Sign Up</a>
+                </li>
+				        <li class="nav-item">
+                  <a class="nav-link" href="Donate.html">Donate</a>
+                </li>
+              </ul>
+			      </div>
+          </div>
+        </nav>
+      </div>
+	  <section class="header position-relative">
+              <div class="col-lg-10 mx-auto">
+                     <div class="detail-box text-center">
+                              <h1>About Us</h1>
+                       <p>Overview on who we are and what we strive to achieve</p>
+                      </div>
+                </div>
+			</section>
+    </div>
+    </header>
+    <!--About Us Section-->
+    <section id="sbs-1591">
+    <div class="cs-container">
+        <div class="cs-image-group">
+            <!--Top left image-->
+            <picture class="cs-picture cs-picture1">
+                <source media="(max-width: 600px)" srcset="../images/running.jpg">
+                <source media="(min-width: 601px)" srcset="../images/running.jpg">
+                <img loading="lazy" decoding="async" src="../images/running.jpg" alt="mechanic" width="413" height="500">
+            </picture>
+            <!--Top Right image-->
+            <picture class="cs-picture cs-picture2">
+                <source media="(max-width: 600px)" srcset="../images/team.jpg">
+                <source media="(min-width: 601px)" srcset="../images/team.jpg">
+                <img loading="lazy" decoding="async" src="../images/team.jpg" alt="mechanic" width="413" height="280">
+            </picture>
+        </div>
+        <div class="cs-content">
+            <h2 class="cs-title" style:color=#211d35;>WELCOME TO FUTURE CHAMPIONS!</h2>
+            <p class="cs-text">
+                We are a passionate non-profit organization committed to transforming the lives of underprivileged athletes by providing them with the resources, training, and support they need to excel in sports and beyond. Our mission is to empower the next generation, instilling in them the values of teamwork, perseverance, and resilience through athletic involvement.
+            </p>
+        </div>
+    </div>
+</section>
+
+<div class="more-about-us layout-style">
+  <div class="text-section">
+    <h2>More About Us</h2>
+    <p>At Future Champions, we believe that every young athlete deserves the chance to pursue their dreams, regardless of their background or circumstances. Through mentorship programs, scholarships, and community partnerships, we strive to break down barriers and create a more inclusive sports environment. Our dedicated team works tirelessly to provide not only athletic training but also life skills development, helping our athletes thrive both on and off the field.</p>
+  </div>
+  <div class="image-section">
+    <img src="../images/young athletes.jpg" alt="Image 2">
+  </div>
+</div>
+
+<div class="call-to-action">
+    Click on the buttons below to learn more about our mission, vision, and history.
+  </div>
+
+  <!-- Section Buttons -->
+  <div class="content-buttons">
+    <button id="missionBtn" class="section-btn active" onclick="showSection('mission')">Mission</button>
+    <button id="visionBtn" class="section-btn" onclick="showSection('vision')">Vision</button>
+    <button id="historyBtn" class="section-btn" onclick="showSection('history')">History</button>
+  </div>
+
+  <!-- Section Content -->
+  <div class="container" id="contentArea">
+    <!-- Mission content is loaded by default -->
+    <div class="row">
+      <div class="column-66">
+        <h1 class="xlarge-font"><b>Mission</b></h1>
+        <p><span style="font-size: 29px;">Our mission is to empower underprivileged athletes by providing them with resources, training, and mentorship to help them excel in sports and build sustainable careers. We strive to make sports accessible to every child, regardless of socioeconomic status, offering equipment, training, and community support.</span></p>
+      </div>
+      <div class="column-33">
+        <img src="../images/equipment2.jpg" alt="Mission Image" style="width: 400px; height: 400px;">
+      </div>
+    </div>
+  </div>     
+  <!-- Bootstrap JavaScript -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>                  
+  </body>
+</html>

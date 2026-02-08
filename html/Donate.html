@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Donation Page</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Poppins:400,600,700&display=swap" rel="stylesheet">
+   
+	<link rel="stylesheet" type="text/css" href="../css/style3.css"/>
+
+    <script src="../JavaScript/script.js"></script>
+</head>
+<body>
+
+    <!-- Donation Form Section -->
+    <div class="container layout_padding2">
+        <h2>Select Gift Option</h2>
+        <a href="Index.html" class="back-button">Or Go Back Home</a>
+        <div class="time">
+            <span class="btn-select" id="monthly">Monthly</span>
+            <span class="btn-select" id="onetime">One-time</span>
+        </div>
+
+        <h3>Select Amount</h3>
+        <div class="value">
+            <span class="btn-select money" data-amount="10">R10</span>
+            <span class="btn-select money" data-amount="30">R30</span>
+            <span class="btn-select money" data-amount="50">R50</span>
+            <span class="btn-select money" data-amount="100">R100</span>
+            <span class="btn-select money" data-amount="200">R200</span>
+            <span class="btn-select money" data-amount="500">R500</span>
+        </div>
+
+        <div class="confirm">
+            <input type="checkbox" id="transaction_fee" name="transaction_fee">
+            <label for="transaction_fee">Yes, I'll add R0.30 each month to cover the transaction fees</label>
+        </div>
+
+        <div class="input">
+            <label for="name">Name</label>
+            <input type="text" id="name" placeholder="Enter your name">
+            <br>
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Enter your email">
+        </div>
+
+        <button type="submit" class="btn btn-primary" id="donate-btn">Donate Now</button>
+
+        <p>By donating, you agree to our <a href="../Terms of Service.pdf" class="blue" target="_blank" rel="noopener noreferrer">Terms of Service</a></p>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="container-fluid footer_section">
+        <p>&copy; 2024 All Rights Reserved. Future Champions</p>
+    </footer>
+</body>
+</html>
