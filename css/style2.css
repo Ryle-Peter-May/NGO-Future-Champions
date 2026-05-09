@@ -426,21 +426,21 @@ a:focus {
 
 .content-left h1 {
   font-size: 48px;
-  color: #211d35;
+  color: #ffffff;
   margin-bottom: 20px;
   text-transform: uppercase;
 }
 
 .content-left h2 {
   font-size: 22px;
-  color: #211d35;
+  color: rgb(236, 238, 255);
   font-weight: bold;
   margin-bottom: 20px;
 }
 
 .content-left p {
   font-size: 18px;
-  color: #333;
+  color: #ffff;
   line-height: 1.8;
   margin-bottom: 20px;
 }
@@ -496,6 +496,7 @@ a:focus {
   text-align: center; /* Center text */
   max-width: 3000px;
   margin: auto;
+  color:#ffffff;
   /* background-color:hsl(250, 30%, 95%); */
   padding: 20px; /* Optional padding for spacing */
 }
@@ -508,7 +509,7 @@ a:focus {
 .more-text h1 {
   font-size: 48px;
   font-weight: bold;
-  color: #27223f; 
+  color: #ff2953;; 
   line-height: 1.2;
 }
 
@@ -518,7 +519,7 @@ a:focus {
 
 .more-text .p {
   font-size: 18px;
-  color: #666;
+  color: #ffffff;
   margin: 20px 0;
   line-height: 1.6;
   
@@ -562,14 +563,14 @@ height: auto; /* Maintain aspect ratio */
 .project-item .text{
   width: 45%;
   font-family: var(--default);
-  color: #000;
+  color: #ffff;
 }
 .project-item .text h3{
   font-size: 48px;
   margin-bottom: 30px;
   text-transform: uppercase;
   font-weight: bold;
-  color: #211d35;
+  color: #ff2953;
 }
 .project-item .text p{
   font-size: 16px;
