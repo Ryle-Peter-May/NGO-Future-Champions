@@ -1,7 +1,10 @@
 body {
   font-family: 'Poppins', sans-serif;
   color: #000000;
-  background-color: hsl(250, 30%, 95%);
+  /* background-color: hsl(250, 30%, 95%); */
+  background-image: url(../images/us-bg.jpg);
+  background-size: cover;
+  background-attachment: fixed;
 }
 
 
@@ -197,7 +200,7 @@ a:focus {
     font-weight: bolder;
     margin-bottom: 1.5rem;
     text-transform: uppercase;
-    color: #211d35;
+    color: #ff2953;
     
 }
   
@@ -207,6 +210,7 @@ a:focus {
   }
   #sbs-1591 .cs-text:last-of-type {
     margin-bottom: 2rem;
+	color:#ffffff;
   }
   
   #sbs-1591 .cs-image-group {
@@ -373,7 +377,8 @@ a:focus {
     .column-66 {
       flex:2;
       padding: 20px;
-      overflow:auto
+      overflow:auto;
+	  color: #ffff;
     }
 
     .column-33 {
@@ -387,6 +392,7 @@ a:focus {
       border-radius: 10px;
     }
    .xlarge-font {
+    color: #ff2953;
     text-align: center;
     font-size: 64px;
     margin-bottom: 40px;
