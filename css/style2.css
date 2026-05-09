@@ -400,7 +400,7 @@ a:focus {
 
    /* General Styles for Project Intro */
 .project-intro {
-  background-color: hsl(250, 30%, 95%);
+  /* background-color: hsl(250, 30%, 95%); */
   padding: 100px 20px; /* General padding for desktop */
   display: flex;
   justify-content: center;
@@ -496,7 +496,7 @@ a:focus {
   text-align: center; /* Center text */
   max-width: 3000px;
   margin: auto;
-  background-color:hsl(250, 30%, 95%);
+  /* background-color:hsl(250, 30%, 95%); */
   padding: 20px; /* Optional padding for spacing */
 }
 
@@ -549,7 +549,7 @@ height: auto; /* Maintain aspect ratio */
   width: 100%;
   margin:0 0 0 0;
   padding: 100px 0;
-  background: hsl(250, 30%, 95%);
+  /* background: hsl(250, 30%, 95%); */
 }
 .project-item{
   float: left;
